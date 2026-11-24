@@ -1,0 +1,14 @@
+**
+!main.py
+!config.json
+!pytest.ini
+!requirements*.txt
+!churn_pipeline/
+!churn_pipeline/*.py
+!data/
+!data/sample.parquet
+!data/full.parquet
+!data/provenance.json
+!tests/
+!tests/*.py
+!Dockerfile

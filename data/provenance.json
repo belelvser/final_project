@@ -1,0 +1,53 @@
+{
+  "source_archive": "google_drive_data.zip",
+  "member": "BigData/homework_modeling_s/modeling_dataset_and_split.parquet",
+  "source_member_sha256": "f9ddec993c4f50798723c4fbf4cbeb4826ee9cc909639e3c045ee937f644842e",
+  "source_rows": 186463,
+  "source_positive": 16449,
+  "sample_rows": 6000,
+  "sample_sha256": "e6a2b9b58c06d54170f34f5f01a0aeecfd89cf870fdbef66cd272f0aea51be3e",
+  "sampling": "Within each existing split, stratified train_test_split after sorting subscriber_key; seed=20260827; train=3600, validation=1200, test=1200",
+  "generator": "TDG S, seed 20260827; synthetic educational telecom data, not production customers",
+  "feature_window": [
+    "2025-10-31",
+    "2025-11-30"
+  ],
+  "label_window": [
+    "2025-11-30",
+    "2025-12-30"
+  ],
+  "target": "churn_proxy: no CDR activity in label window",
+  "source_notebooks": [
+    "homeworks/5.ipynb",
+    "homeworks/7.ipynb"
+  ],
+  "feature_values_match_hw5": true,
+  "legacy_model_member": "BigData/homework_modeling_final_s/selected_model.joblib",
+  "legacy_model_sha256": "4d50cc6573c03ff8aca4c6983987469095b229cf99b68f5fcd7b6880704532e8",
+  "legacy_models_identical": true,
+  "source_notebook_sha256": {
+    "homeworks/1.ipynb": "b2c1274f0e8082d84a27190388a08553fa47d8b90eae66a737b06dcc1baff5ad",
+    "homeworks/2.ipynb": "a7b1ccf0857121c502520df51d1a77119114fe6a6331524d48e0a312889952d1",
+    "homeworks/3.ipynb": "164802532df2a0f88475e2a2119ed5f726c723ca3871c49faa20853c6aca2098",
+    "homeworks/4.ipynb": "2f4459a3c21b14ccc4ae4679495498520823e4819884f9a032a8d115574002ff",
+    "homeworks/5.ipynb": "5969013e74406923b697fcce32d8a4ade285f7f5b08e02a42a84fa37c23d9ba7",
+    "homeworks/6.ipynb": "f048b5cbf8f0bbb6d225e2ade7cb9ee2b228ef35213a034186f76c50cb6c5254",
+    "homeworks/7.ipynb": "c3c3bb803c6b4a73e1e73beb0c906a61f7f9a6409863f6bc92ecb1cf0062e638",
+    "homeworks/8.ipynb": "360fd5b95fc737dfa885029e7547197a837a93839dca389cdf9bbc32779c25aa"
+  },
+  "legacy_expected_test": {
+    "roc_auc": 0.8004553728363142,
+    "f1": 0.34316751018392794,
+    "precision": 0.288921222199127,
+    "recall": 0.42249240121580545,
+    "TP": 1390,
+    "TN": 30582,
+    "FP": 3421,
+    "FN": 1900
+  },
+  "legacy_threshold": 0.6900000000000001,
+  "legacy_status": "Historical metrics only: joblib load failed on Windows with XGBoost 3.4.1 and sklearn 1.6.1: input stream corrupted. Model is not reused.",
+  "full_path": "data/full.parquet",
+  "full_bytes": 6321749,
+  "full_sha256": "f9ddec993c4f50798723c4fbf4cbeb4826ee9cc909639e3c045ee937f644842e"
+}
